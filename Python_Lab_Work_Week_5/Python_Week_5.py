@@ -12,17 +12,25 @@ def Question1():
         print(k, ":", my_dict[k])
     print()
 
-# Q2: Insert and delete a key
 def Question2():
     my_dict = {'a': 1, 'b': 2}
     print("Original:", my_dict)
-    # Insert
-    my_dict['c'] = 3
-    print("After Insertion:", my_dict)
-    # Delete
-    del my_dict['b']
-    print("After Deletion:", my_dict)
+
+    # Insert 'c':3 between 'a' and 'b'
+    new_dict = {}
+    for key, value in my_dict.items():
+        new_dict[key] = value
+        if key == 'a':
+            new_dict['c'] = 3
+
+    print("After Insertion:", new_dict)
+
+    # Delete 'b'
+    del new_dict['b']
+    print("After Deletion:", new_dict)
     print()
+
+Question2()
 
 # Q3: Check if value exists
 def Question3():
@@ -73,3 +81,4 @@ if __name__ == "__main__":
     Question4()
     print("\n--- Question 5 ---")
     Question5()
+
