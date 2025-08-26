@@ -1,0 +1,3 @@
+Welcome to file two.
+This is another example file.
+File two is simple and clear.
